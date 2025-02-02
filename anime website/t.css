@@ -1,0 +1,371 @@
+* {
+  padding:0;
+  margin:0;
+}
+.main {
+  height:100vh;
+  background-image:url("https://images.pexels.com/photos/16025040/pexels-photo-16025040/free-photo-of-teenage-girl-with-dyed-blonde-hair.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  width:100%;
+  background-repeat:no-repeat;
+  background-position:top;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.content {
+  background-color:rgba(255, 255, 255, 0.703);
+  display:grid;
+  grid-template-columns:300px;
+  grid-template-rows:repeat(4,100px);
+  justify-content:center;
+  border-radius:10px 30px 60px 30px;
+}
+.content div h2 {
+  color:rgb(231, 44, 75);
+  text-transform: uppercase;
+  font-size:25px;
+  font-family:system-ui;
+  padding:20px;
+}
+.content div p {
+  color:#cd3a86;
+  font-size:17px;
+  font-family:system-ui;
+  padding:10px;
+  font-weight:600;
+}
+.content div input {
+  color:#39132b;
+  font-size:13px;
+  font-family:system-ui;
+  padding:10px;
+  width:230px;
+  height:10px;
+  margin:20px;
+  margin-top:10px;
+  border: 3px solid rgb(243, 156, 170);
+  border-radius:20px;
+}
+.content div input:active {
+  border: 3px solid rgb(243, 156, 170);
+  box-shadow : 1px 1px 13px rgba(174, 10, 106, 0.708),
+  3px 4px 16px rgba(174, 10, 106, 0.708),
+  2px 3px 17px rgba(174, 10, 106, 0.708);
+
+}
+.content div input:hover {
+  border: 3px solid rgb(243, 156, 170);
+  box-shadow : 1px 1px 8px rgba(174, 10, 106, 0.708),
+  3px 4px 10px rgba(174, 10, 106, 0.708),
+  2px 3px 13px rgba(174, 10, 106, 0.708);
+
+}
+.content div input::placeholder {
+  color:rgb(214, 9, 203);
+  font-size:14px;
+
+}
+.content div button {
+ padding:6px 26px;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color:white;
+ font-size:15px;
+ font-weight:600;
+ margin:20px;
+ border: 1px solid rgb(222, 135, 135);
+ border-radius: 15px 8px 12px 10px;
+ cursor:pointer;
+ transition: 0.5s;
+}
+.one {
+  background-color:#f1108c;
+}
+.tow {
+  background-color:#ac277c;
+}
+.content div button:hover {
+  transform:scale(1.1);
+}
+.one:hover {
+  box-shadow:0px 0px  8px hsla(327, 89%, 44%, 0.468),
+  0px 0px 10px hsla(327, 89%, 44%, 0.468),
+  0px 0px 13px hsla(327, 89%, 44%, 0.468);
+}
+.tow:hover {
+  box-shadow:0px 0px 9px hsla(327, 88%, 29%, 0.468),
+  0px 0px 11px hsla(350, 87%, 43%, 0.468),
+  0px 0px 13px hsla(308, 92%, 40%, 0.468);
+}
+header {
+  position:absolute;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  background-color:rgba(201, 11, 125, 0.432);
+  height:1px;
+  overflow:hidden;
+  transition: 0.5s;
+}
+header:hover {
+height:68px;
+}
+body {
+  position:relative;
+}
+header ul li a {
+  color:rgb(175, 5, 115);
+  text-decoration:none;
+  font-family:system-ui;
+  font-size:15px;
+  font-weight:600;
+
+}
+header ul {
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center; 
+  width:500px;
+
+}
+.logo {
+  width:100%;
+  object-fit:cover;
+}
+header ul li a {
+  list-style:none;
+  padding:7px 10px;
+  border-radius:20px;
+  text-align:center;
+}
+header ul li {
+  list-style:none;
+  padding:7px 10px;
+  border-radius:20px;
+  cursor:pointer;
+}
+header ul li a:hover,
+.h {
+  background-color:#ac277c;
+  color:white;
+  box-shadow:0px 0px 9px hsla(327, 94%, 27%, 0.468),
+  0px 0px 11px hsla(350, 87%, 43%, 0.468);
+}
+header div {
+  margin:10px;
+  width:100px;
+  height: 50px;
+  padding-bottom:6px;
+}
+.container {
+  background-image:url('https://images.pexels.com/photos/16025016/pexels-photo-16025016/free-photo-of-girl-touching-her-face.jpeg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
+  height:100vh;
+  position:relative;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+}
+.item {
+  position:absolute;
+  border-radius:60px 60px 13px 13px;
+  width:500px;
+  bottom:150px;
+  top:20px;
+  left:20px;
+  margin-top:20px;
+  background-color:rgba(244, 203, 239, 0.244);
+  border:none;
+  box-shadow: 1px 2px 10px rgba(219, 15, 175, 0.553),2px 3px 14px rgba(219, 15, 175, 0.553),2px 3px 17px rgba(219, 15, 175, 0.553);
+  transition: 0.5s;
+}
+.item:hover {
+  transform:scale(1.05);
+  box-shadow: 1px 2px 17px rgba(219, 15, 175, 0.553),2px 3px 19px rgba(219, 15, 175, 0.553),2px 3px 21px rgba(219, 15, 175, 0.553);
+}
+.title {
+  font-family:Verdana;
+  font-size:50px;
+  font-weight:800;
+  color:plum;
+  padding:10px;
+  margin-left:10px;
+  margin-bottom:30px;
+}
+.text {
+  font-family:Verdana;
+  font-size:18px;
+  font-weight:400;
+  color:rgb(192, 83, 192);
+  padding:10px;
+  margin-left:10px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.me {
+  padding:10px 50px;
+  font-size:16px;
+  font-family:Impact;
+  font-weight:500;
+  background-color:#f1108c;
+  color:#d391b3;
+  cursor:pointer;
+  margin-top:20px;
+  margin-left:10px;
+  border:none;
+  letter-spacing: 1px;
+  border-radius:20px;
+  border-bottom: 5px solid rgb(173, 152, 173);
+  transition: 0.5s;
+}
+.me:hover {
+  transform:scale(1);
+  box-shadow: 1px 2px 10px rgba(219, 15, 175, 0.553); 
+}
+.me:active {
+  border-bottom:none;
+  letter-spacing: 2px;
+}
+.item-one {
+  right:20px;
+  position:absolute;
+  border-radius:60px 60px 13px 13px;
+  width:500px;
+  bottom:20px;
+  top:150px;
+  margin-top:20px;
+  background-color:rgba(244, 203, 239, 0.521);
+  border:none;
+  box-shadow: 1px 2px 10px rgba(219, 15, 175, 0.553),2px 3px 14px rgba(219, 15, 175, 0.553),2px 3px 17px rgba(219, 15, 175, 0.553);
+  transition: 0.5s;
+}
+.item-one:hover {
+  transform:scale(1.05);
+  box-shadow: 1px 2px 17px rgba(219, 15, 175, 0.553),2px 3px 19px rgba(219, 15, 175, 0.553),2px 3px 21px rgba(219, 15, 175, 0.553);
+}
+.content-one {
+  background-image:url('https://images.pexels.com/photos/20155733/pexels-photo-20155733/free-photo-of-young-woman-in-a-cosplay-of-an-anime-character-holding-a-sword.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.grid-items {
+  display:grid;
+  padding:10px;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows:repeat(2, 1fr);
+  row-gap:20px;
+  column-gap:15px;
+  width:90%;
+  height:90vh;
+  background-color:#c293ad6b;
+  border-radius:20px;
+}
+.itemx {
+  border-radius:20px;
+ 
+}
+.onex {
+  background:url('1ffe14df-eee0-4239-8f25-120b70bbacab.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  cursor:pointer;
+  box-shadow: 1px 2px 10px rgba(178, 13, 167, 0.553),2px 3px 14px rgba(199, 15, 219, 0.553),2px 3px 17px rgba(209, 15, 219, 0.553);
+}
+.towx {
+  background:url('8b5755d8b0e498ed9e882b46a87879fc99975a07_high.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  cursor:pointer;
+  box-shadow: 1px 2px 10px rgba(199, 15, 219, 0.553),2px 3px 14px rgba(147, 15, 143, 0.553),2px 3px 17px rgba(181, 20, 196, 0.553);
+}
+.threex {
+  background:url('51ed5ca4edd5eadd27ce253fd7531eb0057b9290_high.webp');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  cursor:pointer;
+  box-shadow: 1px 2px 10px rgba(148, 5, 138, 0.553),2px 3px 14px rgba(169, 13, 174, 0.553),2px 3px 17px rgba(154, 20, 164, 0.553);
+}
+.fourx {
+  background:url('619RmKdoIiL._AC_UF1000\,1000_QL80_.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  cursor:pointer;
+  box-shadow: 1px 2px 10px rgba(122, 7, 119, 0.553),2px 3px 14px rgba(163, 8, 163, 0.553),2px 3px 17px rgba(127, 14, 127, 0.553);
+}
+.fivex {
+  background:url('a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  cursor:pointer;
+  border-radius:20px;
+  box-shadow: 1px 2px 10px rgba(118, 2, 111, 0.553),2px 3px 14px rgba(165, 16, 167, 0.553),2px 3px 17px rgba(167, 12, 188, 0.553);
+}
+.sixx {
+  background:url('beautiful-cute-anime-girl-innocent-anime-teenage_744422-6819.avif');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  cursor:pointer;
+  box-shadow: 1px 2px 10px rgba(182, 15, 219, 0.553),2px 3px 14px rgba(175, 18, 189, 0.553),2px 3px 17px rgba(167, 13, 185, 0.553);
+}
+.a {
+  position:absolute;
+  content:"";
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:rgba(223, 94, 152, 0.826);
+  border-radius:20px;
+  transition:0.5s;
+}
+.a:hover {
+  background-color:transparent;
+}
+.the {
+  position:absolute;
+  top:20px;
+  bottom:10px;
+  left:20px;
+  justify-content:center;
+
+}
+.the h4 {
+  color:#f1108c;
+  font-family:Georgia;
+  font-weight:bold;
+  font-size:20px;
+}
+.the p {
+  color:black;
+  font-family:Georgia;
+  font-weight:bold;
+  font-size:20px;
+}
+
+
+
+
+
+
+
+
